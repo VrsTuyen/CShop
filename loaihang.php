@@ -28,8 +28,18 @@
         echo "<td>" . $row["Maloai"] . "</td>";
         echo "<td>" . $row["Tenloai"] . "</td>";
         echo "<td> <a href='index.php?page=sualoaihang&maloai=" . $row["Maloai"] . "'> Sửa </a> </td>";
-        echo "<td> <a href='index.php?page=xoaloaihang&maloai=" . $row["Maloai"] . "'>  Xóa </a> </td>";
+        echo "<td> <a href='index.php?page=xoaloaihang&maloai=".$row["Maloai"]."' onclick = 'return confirm();' >  Xóa </a> </td>";
         echo "</tr>";
+        $i++;
     }
     ?>
 </table>
+
+
+<script>
+
+function confirm(){
+return  confirm("Bạn có muốn xóa?");
+}
+
+</script>

@@ -28,10 +28,7 @@
     </table>
 
 </form>
-
-
-
-<?php
+<!-- <?php
 
 if (isset($_POST["submit"])) {
     $ten = $_POST["tendn"];
@@ -43,7 +40,9 @@ if (isset($_POST["submit"])) {
         <script type="text/javascript">
             document.getElementsById("c")[0].innerHTML = "Tài khoản đã tồn tại";
         </script>
-<?php  } else {
+<?php  }
+
+ else {
         $sql = "insert into Account values('$ten','$pass')";
         mysqli_query($con, $sql);
         $_SESSION["user"] = $ten;
@@ -53,4 +52,4 @@ if (isset($_POST["submit"])) {
     }
 }
 
-?>
+?> -->

@@ -1,29 +1,28 @@
 
 <?php
 if(isset($_POST["submit"])){
-    $maloai = $_POST["Maloai"];
-    $tenloai = $_POST["Tenloai"];
+    $maloai = $_POST["txtmaloai"];
+    $tenloai = $_POST["txttenloai"];
 
-    $sql = "insert into Loaihang values('$maloai','$tenloai')";
+    $sql = "insert into LoaiHang values('$maloai','$tenloai')";
     mysqli_query($con, $sql);
     header('location:index.php?page=loaihang');
 }
-
 ?>
 
-<form action="post">
+<form method="post">
 <table>
     <tr>
         <td>Mã loại</td>
-        <td><input type="text" name="Maloai"></td>
+        <td><input type="text" name="txtmaloai"></td>
     </tr>
     <tr>
         <td>Tên loại</td>
-        <td><input type="text" name="Tenloai"></td>
+        <td><input type="text" name="txttenloai"></td>
     </tr>
     <tr>
         <td></td>
-        <td><input type="submit" name="submit" value="Thêm mới">
+        <td><input type="submit" value="Thêm mới" name="submit">
         <input type="button"  value="Hủy" onclick="window.location = 'index.php?page=loaihang';">
     </td>
     </tr>
