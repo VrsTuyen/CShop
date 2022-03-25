@@ -126,6 +126,8 @@ session_start();
             include_once("loaihang.php");
         if($page == "themmoiloaihang")
             include_once("themmoiloaihang.php");
+        if($page == "sualoaihang")
+            include_once("sualoaihang.php");
         ?>
 
       </div>
