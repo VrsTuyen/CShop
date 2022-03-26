@@ -1,7 +1,8 @@
 <script>
-    function Themmoi(){
-       window.location = "index.php?page=themmoiloaihang";
+    function Themmoi() {
+        window.location = "index.php?page=themmoiloaihang";
     }
+
 </script>
 
 <table border="1" cellpadding="10" cellspacing="10" align="center">
@@ -14,8 +15,8 @@
         <th>Xóa</th>
     </tr>
     <tr>
-        <td collspan = "6">
-            <input type="button" value="Thêm Mới" onclick= "Themmoi()" >
+        <td collspan="6">
+            <input type="button" value="Thêm Mới" onclick="Themmoi()">
         </td>
     </tr>
     <?php
@@ -28,18 +29,9 @@
         echo "<td>" . $row["Maloai"] . "</td>";
         echo "<td>" . $row["Tenloai"] . "</td>";
         echo "<td> <a href='index.php?page=sualoaihang&maloai=" . $row["Maloai"] . "'> Sửa </a> </td>";
-        echo "<td> <a href='index.php?page=xoaloaihang&maloai=".$row["Maloai"]."' onclick = 'return confirm();' >  Xóa </a> </td>";
+        echo "<td> <a href='index.php?page=xoaloaihang?maloai=" .$row["Maloai"]. "' onclick = 'confirm()'>  Xóa </a> </td>";
         echo "</tr>";
         $i++;
     }
     ?>
 </table>
-
-
-<script>
-
-function confirm(){
-return  confirm("Bạn có muốn xóa?");
-}
-
-</script>

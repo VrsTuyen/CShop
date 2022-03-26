@@ -128,8 +128,8 @@ session_start();
             include_once("themmoiloaihang.php");
         if($page == "sualoaihang")
             include_once("sualoaihang.php");
-        // if($page == "xoaloaihang")
-        //     include_once("xoaloaihang.php");
+        if($page == "xoaloaihang")
+            include_once("xoaloaihang.php");
         if($page == "hanghoa")
             include_once("hanghoa.php");
         ?>
