@@ -20,7 +20,7 @@ if (isset($_POST["submit"])) {
 ?>
 
 <form method="post">
-    <table>
+    <table >
         <caption>Sửa loại hàng</caption>
         <tr>
             <td>Mã loại</td>
